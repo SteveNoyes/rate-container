@@ -1,26 +1,75 @@
-
-/* font-family: 'Overpass', sans-serif; */
-/* font weights 400 700 */
-/* graph font size 15px */
-
 :root {
   --orange: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
 	--grey-100: hsl(217, 12%, 63%);
+	/* I'm not sure if I'm right but this color didn't look right */
 	--grey-500: hsl(216, 12%, 54%);
+	/* So I turned the hsl to rgba */
+	--grey-500-a: rgba(124, 135, 152, .1);
 	--blue-500: hsl(213, 19%, 18%);
 	--blue-900: hsl(216, 12%, 8%);
 }
 
 
-.wrapper {
-	height: 100vh:
-	width: auto;
-	background-color: var(--blue-900);
+body {
+	color: var(--white);
+	font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+	color: var(--white);
+	font-weight: 700;
+	font-size: 25px;
+}
+
+p {
+	font-size: 15px;
+	color: var(--grey-100);
+}
+
+.starCircle {
+	padding: .7em;
+	background-color: var(--grey-500-a);
+	border-radius: 50%;
+}
+
+.circle {
+	padding: 1.2em;
+	background-color: var(--grey-500-a);
+	border-radius: 50%;
 }
 
 
+.wrapper {
+	height: 100vh;
+	background-color: var(--blue-900);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+.rateWrapper {
+	background-color: var(--blue-500);
+	width: 325px;
+	height: auto;
+}
+
+.numbers {
+	display: flex;
+	justify-content: space-between;
+}
+
+.number {
+	color: var(--grey-100);
+}
+
+button {
+	width: 100%;
+	border-radius: 15px;
+	background-color: var(--orange);
+	color: var(--white);
+	padding: 1em;
+}
 
 
 /* Media Query Desktop:1440px    Mobile: 375px */
