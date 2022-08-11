@@ -21,7 +21,7 @@ h1 {
 }
 
 /* I kept trying to get the sentences to line up like they do in the sample photo. But I couldn't get it. */
-p {
+.graph {
 	font-size: 15px;
 	color: var(--grey-100);
   padding: 1em 0;
@@ -82,12 +82,21 @@ like with the star. So I'm putting different on the sides than on the top and bo
 
 button {
 	width: 100%;
-	border-radius: 15px;
+	border-radius: 25px;
 	background-color: var(--orange);
-	color: var(--white);
+  color: var(--white);
 	padding: .7em;
   letter-spacing: .1em;
   border: none;
+}
+
+.btnLink {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.btnLink:hover {
+  color: var(--orange);
 }
 
 button:hover {
@@ -96,4 +105,40 @@ button:hover {
   color: var(--orange);
 }
 
-/* Media Query Desktop:1440px    Mobile: 375px */
+
+/*==============================================
+              Thank You Page
+==============================================*/
+
+
+.thankYouWrapper {
+  background-color: var(--blue-500);
+	width: 300px;
+	height: auto;
+	padding: 1.5em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.thankYouWrapper img {
+  padding: 1em;
+}
+
+.thankYouWrapper h1 {
+  padding-top: 1.3em;
+}
+
+.rateInput {
+  width: 60%;
+  margin: auto;
+  padding: .7em .5em .5em .5em;
+  background-color: var(--grey-500-a);
+  color: var(--orange);
+  border-radius: 25px;
+}
+
+
+
+
+
+/* Media Query Desktop:1440px | Mobile: 375px */
