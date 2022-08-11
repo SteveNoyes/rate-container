@@ -2,7 +2,7 @@
   --orange: hsl(25, 97%, 53%);
   --white: hsl(0, 0%, 100%);
 	--grey-100: hsl(217, 12%, 63%);
-	/* I'm not sure if I'm right but this color didn't look right */
+	/* This color didn't look right */
 	--grey-500: hsl(216, 12%, 54%);
 	/* So I turned the hsl to rgba */
 	--grey-500-a: rgba(124, 135, 152, .1);
@@ -10,9 +10,7 @@
 	--blue-900: hsl(216, 12%, 8%);
 }
 
-
 body {
-	color: var(--white);
 	font-family: 'Overpass', sans-serif;
 }
 
@@ -22,23 +20,39 @@ h1 {
 	font-size: 25px;
 }
 
+/* I kept trying to get the sentences to line up like they do in the sample photo. But I couldn't get it. */
 p {
 	font-size: 15px;
 	color: var(--grey-100);
+  padding: 1em 0;
+  letter-spacing: .1em;
+  line-height: 1.3em;
 }
 
 .starCircle {
 	padding: .7em;
 	background-color: var(--grey-500-a);
 	border-radius: 50%;
+  margin-bottom: 1em;
 }
 
+/* The cirle doesn't look right with the same padding all the way around,
+like with the star. So I'm putting different on the sides than on the top and bottom */
 .circle {
-	padding: 1.2em;
+	padding: .7em 1em;
 	background-color: var(--grey-500-a);
 	border-radius: 50%;
 }
 
+.circle:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.circle:active {
+  background-color: var(--grey-500);
+}
 
 .wrapper {
 	height: 100vh;
@@ -50,13 +64,16 @@ p {
 
 .rateWrapper {
 	background-color: var(--blue-500);
-	width: 325px;
+	width: 300px;
 	height: auto;
+	padding: 1.5em;
+  border-radius: 8px;
 }
 
 .numbers {
 	display: flex;
 	justify-content: space-between;
+  padding-bottom: 1em;
 }
 
 .number {
@@ -68,8 +85,15 @@ button {
 	border-radius: 15px;
 	background-color: var(--orange);
 	color: var(--white);
-	padding: 1em;
+	padding: .7em;
+  letter-spacing: .1em;
+  border: none;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--orange);
+}
 
 /* Media Query Desktop:1440px    Mobile: 375px */
