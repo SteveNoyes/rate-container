@@ -50,10 +50,6 @@ like with the star. So I'm putting different on the sides than on the top and bo
   color: var(--white);
 }
 
-.circle:active {
-  background-color: var(--grey-500);
-}
-
 .wrapper {
 	height: 100vh;
 	background-color: var(--blue-900);
